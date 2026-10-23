@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f7f6f2">
+  <link rel="icon" type="image/svg+xml" href="assets/tj-monogram.svg">
+  <script>(function(){try{var stored=localStorage.getItem('tj-theme');var theme=(stored==='dark'||stored==='light')?stored:'light';document.documentElement.setAttribute('data-theme',theme);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+  <script>window.fallbackBookCover = window.fallbackBookCover || function(){};</script><meta name="description" content="Now — what T.J. Seimela is currently working on and learning: AI, web development, third-year IT studies at Vaal University of Technology, and live listening activity."><title>Now — T.J. Seimela</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"><style>
+    :root {
+      --ink: #212725;
+      --ink-soft: #5a615d;
+      --paper: #f7f6f2;
+      --white: #fffefa;
+      --sand: #e5e3da;
+      --line: #dcded7;
+      --accent: #9b573c;
+      --dark: #202b26;
+      --font-sans: 'DM Sans', 'Segoe UI', Arial, sans-serif;
+      --font-serif: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+      --container: 1240px;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-sans);font-size:16px;-webkit-font-smoothing:antialiased}
+    body.menu-open{overflow:hidden}
+    a{color:inherit;text-decoration:none}
+    a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+    button{font:inherit}
+    img{max-width:100%;display:block}
+    .container{width:min(var(--container),calc(100% - 96px));margin-inline:auto}
+    .skip-link{position:absolute;left:16px;top:-100px;background:var(--ink);color:#fff;padding:12px 20px;z-index:1000}
+    .skip-link:focus{top:12px}
+    .site-header{position:relative;z-index:30;background:var(--paper);border-bottom:1px solid var(--line)}
+    .header-inner{min-height:91px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:30px}
+    .brand{justify-self:start;font-weight:700;letter-spacing:-.045em;font-size:22px;line-height:1;white-space:nowrap}
+    .brand span{color:var(--accent)}
+    .desktop-nav{display:flex;gap:42px;align-items:center}
+    .desktop-nav a{color:#4d5550;font-size:13px;font-weight:600;transition:color .2s ease}
+    .desktop-nav a:hover,.desktop-nav a[aria-current="page"]{color:var(--accent)}
+    .nav-contact{justify-self:end;font-size:13px;font-weight:700;display:inline-flex;align-items:center;gap:18px;border-bottom:1px solid var(--ink);padding-bottom:8px;transition:color .2s,border-color .2s}
+    .nav-contact:hover{color:var(--accent);border-color:var(--accent)}
+    .arrow{display:inline-block;transition:transform .2s ease}
+    a:hover .arrow{transform:translate(2px,-2px)}
+    .menu-toggle{display:none;background:none;border:0;cursor:pointer;padding:10px;color:var(--ink)}
+    .menu-toggle svg{width:25px;height:25px;display:block}
+    .mobile-nav{display:none}
+
+    /* Intro: the photography and typography are the main design elements. */
+    .hero{overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.09fr .91fr;align-items:stretch;min-height:656px}
+    .hero-content{padding:86px 38px 62px 0;display:flex;flex-direction:column;justify-content:center;min-width:0}
+    .eyebrow{display:inline-flex;align-items:center;gap:13px;text-transform:uppercase;letter-spacing:.19em;font-weight:700;font-size:11px;color:var(--accent)}
+    .eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+    .hero h1{font-size:clamp(64px,6.2vw,101px);line-height:.98;letter-spacing:-.077em;font-weight:600;margin:38px 0 28px;max-width:800px}
+    .hero h1 .hero-intro-line{white-space:nowrap;display:block}
+    .hero h1 .name-line{display:block;white-space:nowrap}
+    .hero h1 em{font:italic 1.04em var(--font-serif);letter-spacing:-.055em;color:var(--accent);font-weight:400}
+    .hero-description{font-size:17px;color:var(--ink-soft);line-height:1.9;max-width:465px;margin:0 0 36px}
+    .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:26px}
+    .button-primary{display:inline-flex;align-items:center;gap:34px;background:var(--dark);color:#fff;padding:18px 23px;font-size:13px;font-weight:700;min-height:54px;transition:background .2s ease,transform .2s ease}
+    .button-primary:hover{background:#395046;transform:translateY(-2px)}
+    .text-link{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:700;border-bottom:1px solid #9ca6a0;padding:8px 0;transition:color .2s ease}
+    .text-link:hover{color:var(--accent)}
+    .hero-photo-wrap{padding-top:34px;position:relative;display:flex;flex-direction:column;justify-content:end}
+    .hero-photo-panel{position:relative;min-height:590px;height:100%;background:#d8d7cf;overflow:hidden;isolation:isolate}
+    .hero-photo-panel::before{content:"";position:absolute;inset:24px;border:1px solid rgba(255,255,255,.3);pointer-events:none;z-index:2}
+    .hero-photo-panel img{position:absolute;bottom:-2px;left:50%;transform:translateX(-50%);width:min(93%,565px);height:auto;max-height:96%;object-fit:contain;object-position:bottom;z-index:1}
+    .hero-photo-label{position:absolute;z-index:3;top:40px;left:41px;font-size:10px;letter-spacing:.18em;font-weight:700;color:#526059;text-transform:uppercase}
+    .hero-photo-number{position:absolute;z-index:3;right:42px;top:39px;font-size:11px;font-weight:600;color:#526059}
+    .hero-bottom-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .strip-inner{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:80px}
+    .strip-title{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--ink-soft)}
+    .strip-values{display:flex;align-items:center;gap:30px;color:#303b34;font-size:13px;font-weight:600}
+    .strip-values b{color:var(--accent);font-size:10px;font-weight:400}
+
+    /* About */
+    .about{background:var(--white);padding:132px 0 136px}
+    .section-grid{display:grid;grid-template-columns:30% 70%;gap:0}
+    .section-kicker{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);display:flex;gap:16px;align-items:start;padding-top:13px}
+    .section-kicker span{color:#8f9690}
+    .about-copy{max-width:810px}
+    .section-title{font-weight:500;letter-spacing:-.047em;font-size:clamp(42px,5vw,68px);line-height:1.11;margin:0}
+    .section-title em{font-family:var(--font-serif);font-weight:400;color:var(--accent)}
+    .about-description{max-width:665px;margin:30px 0 50px;font-size:17px;line-height:1.95;color:var(--ink-soft)}
+    .interests{border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);gap:25px;padding-top:25px}
+    .interest-item{font-size:13px;font-weight:700;color:var(--ink)}
+    .interest-item span{display:block;color:#999f99;margin-bottom:12px;font-size:11px;font-weight:500}
+
+
+    /* Portfolio: a simple, clear index of work — no unnecessary card styling. */
+    .projects{background:#e9ebe4;padding:116px 0 123px;border-top:1px solid var(--line)}
+    .projects-grid{display:grid;grid-template-columns:30% 70%}
+    .projects-main{min-width:0}
+    .projects .section-title{font-size:clamp(42px,4.6vw,64px)}
+    .projects-description{font-size:15px;line-height:1.85;color:var(--ink-soft);max-width:525px;margin:20px 0 45px}
+    .portfolio-subheading{display:flex;align-items:center;gap:14px;font-size:14px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin:43px 0 0;color:#444f46}
+    .portfolio-subheading span{color:#858f85;font-weight:500;font-size:11px}
+    .project-link{display:grid;grid-template-columns:1fr auto;align-items:center;gap:25px;border-top:1px solid #c6ccc2;border-bottom:1px solid #c6ccc2;padding:29px 0 31px;transition:padding .25s ease,color .2s ease}
+    .project-link:hover{color:var(--accent);padding-left:7px;padding-right:7px}
+    .project-meta{display:block;text-transform:uppercase;letter-spacing:.17em;font-size:10px;font-weight:700;color:#858f85;margin-bottom:12px}
+    .project-name{display:block;font-weight:500;letter-spacing:-.047em;font-size:clamp(26px,3vw,39px);line-height:1.2}
+    .project-destination{display:flex;align-items:center;gap:17px;color:#56625b;font-size:12px;overflow-wrap:anywhere}
+    .project-destination .arrow{font-size:22px;color:var(--accent)}
+
+    /* Listening: a quiet, always-current Last.fm card. */
+    .music{background:var(--paper);padding:112px 0 118px;border-top:1px solid var(--line)}
+    .music-grid{display:grid;grid-template-columns:30% 70%}
+    .music-main{min-width:0}
+    .music-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:27px}
+    .music .section-title{font-size:clamp(40px,4.5vw,62px)}
+    .music-description{font-size:15px;line-height:1.85;color:var(--ink-soft);max-width:480px;margin:19px 0 0}
+    .music-profile-link{font-size:12px;font-weight:700;white-space:nowrap;padding-bottom:6px;border-bottom:1px solid #9ba69b;display:inline-flex;align-items:center;gap:9px;transition:color .2s}
+    .music-profile-link:hover{color:var(--accent)}
+    .player-card{background:var(--dark);color:#fffefa;border:1px solid rgba(0,0,0,.06);padding:26px;display:flex;gap:30px;align-items:center;min-height:232px;position:relative;overflow:hidden}
+    .player-art{width:179px;height:179px;flex:0 0 179px;position:relative;display:grid;place-items:center;background:#4b584f;color:#bbc7ba;overflow:hidden}
+    .player-art::after{content:"";position:absolute;inset:8px;border:1px solid rgba(255,255,255,.14);pointer-events:none}
+    .player-art svg{width:87px;height:87px;opacity:.7}
+    .player-art img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+    .player-art img[hidden]{display:none}
+    .player-details{align-self:stretch;min-width:0;display:flex;flex-direction:column;justify-content:center;padding:5px 68px 5px 0}
+    .player-status{display:flex;align-items:center;gap:10px;letter-spacing:.14em;font-size:10px;font-weight:700;text-transform:uppercase;color:#c2d0c3;margin:0 0 22px}
+    .player-led{width:7px;height:7px;border-radius:50%;background:#8e9c8d;flex-shrink:0}
+    .player-card.is-playing .player-led{background:#abd9a9;box-shadow:0 0 0 5px rgba(171,217,169,.10);animation:music-glow 2s ease-in-out infinite}
+    @keyframes music-glow{50%{box-shadow:0 0 0 9px rgba(171,217,169,.03)}}
+    .track-title{font-size:clamp(23px,2.4vw,33px);line-height:1.18;font-weight:500;letter-spacing:-.046em;margin:0 0 9px;overflow-wrap:anywhere}
+    .track-artist{font-size:15px;color:#c7d2c9;margin:0;line-height:1.5;overflow-wrap:anywhere}
+    .track-album{font-size:12px;color:#9bad9f;margin:6px 0 0;min-height:0;overflow-wrap:anywhere}
+    .track-link{font-size:12px;font-weight:700;display:inline-flex;gap:11px;align-items:center;color:#d9b6a1;margin-top:23px;align-self:start;border-bottom:1px solid #829186;padding-bottom:4px;transition:color .2s}
+    .track-link:hover{color:#fff}
+    .player-bars{position:absolute;right:27px;bottom:30px;height:28px;display:flex;gap:4px;align-items:end;opacity:.45}
+    .player-bars span{display:block;width:3px;background:#d4ddd0;height:8px}
+    .player-bars span:nth-child(2){height:22px}.player-bars span:nth-child(3){height:15px}.player-bars span:nth-child(4){height:25px}.player-bars span:nth-child(5){height:12px}
+    .player-card.is-playing .player-bars{opacity:1}
+    .player-card.is-playing .player-bars span{animation:music-bounce 1s ease-in-out infinite alternate}
+    .player-card.is-playing .player-bars span:nth-child(2){animation-delay:-.3s}.player-card.is-playing .player-bars span:nth-child(3){animation-delay:-.65s}.player-card.is-playing .player-bars span:nth-child(4){animation-delay:-.15s}.player-card.is-playing .player-bars span:nth-child(5){animation-delay:-.5s}
+    @keyframes music-bounce{from{height:5px}to{height:24px}}
+    .music-fineprint{font-size:12px;line-height:1.6;color:#7b857c;margin:18px 0 0}
+
+    /* Reading list */
+    .books{padding:128px 0 142px;background:#eeeee8}
+    .books-top{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:62px}
+    .books-top .section-title{max-width:650px}
+    .books-intro{max-width:285px;margin:0 0 6px;font-size:14px;line-height:1.85;color:var(--ink-soft)}
+    .books-list{display:grid;grid-template-columns:1fr 1fr;column-gap:64px;row-gap:0}
+    .book{padding:29px 0 34px;border-top:1px solid #cfd2ca;display:grid;grid-template-columns:137px 1fr;gap:25px;align-items:start;min-width:0}
+    .book-art{position:relative;width:137px;height:194px;display:flex;align-items:center;justify-content:center;text-align:left;box-shadow:5px 7px 15px rgba(30,38,32,.12);overflow:hidden;isolation:isolate;flex-shrink:0}
+    .book-art::before{content:"";position:absolute;inset:0 auto 0 0;width:7px;background:rgba(0,0,0,.08);z-index:1;pointer-events:none}
+    .book-art span{display:block;width:100%;padding:18px 17px;font-size:20px;letter-spacing:-.05em;line-height:1.03;font-weight:700}
+    .book-art small{display:block;font-size:8px;font-weight:700;line-height:1.3;letter-spacing:.12em;margin-top:18px}
+    .book-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;z-index:2}
+    .book-art img[hidden]{display:none}
+    .book-art--atomic{background:#eee9d7;color:#ad5139}
+    .book-art--meaning{background:#31494b;color:#fff6d8}
+    .book-art--mastery{background:#df5033;color:#241d1a}
+    .book-art--meditations{background:#283f3c;color:#efdfb7}
+    .book-info{display:flex;flex-direction:column;min-height:194px;align-items:start}
+    .book-index{color:#8e9891;font-size:11px;letter-spacing:.1em;margin-bottom:16px}
+    .book h3{font-size:20px;line-height:1.25;letter-spacing:-.035em;font-weight:600;margin:0 0 7px}
+    .book-author{color:var(--ink-soft);font-size:12px;margin:0 0 16px}
+    .book-note{font-size:13px;line-height:1.6;color:#626b65;margin:0 0 17px}
+    .book-action{font-size:12px;font-weight:700;border-bottom:1px solid #adb6ae;padding-bottom:4px;margin-top:auto;display:inline-flex;gap:11px;align-items:center}
+    .book-action:hover{color:var(--accent);border-color:var(--accent)}
+
+    /* Contact */
+    .contact{background:var(--dark);color:#f8f7f2;padding:115px 0 33px}
+    .contact-inner{display:grid;grid-template-columns:30% 70%}
+    .contact .section-kicker{color:#c89b85}
+    .contact .section-kicker span{color:#78897e}
+    .contact-content h2{font-weight:500;font-size:clamp(54px,6.3vw,92px);letter-spacing:-.055em;line-height:1.04;margin:0 0 25px;max-width:800px}
+    .contact-content h2 em{font-family:var(--font-serif);font-weight:400;color:#ceb09a}
+    .contact-content p{color:#c1cbc2;max-width:485px;line-height:1.9;font-size:16px;margin:0 0 34px}
+    .email-link{font-size:clamp(15px,2.15vw,25px);font-weight:500;letter-spacing:-.025em;border-bottom:1px solid #8e9d92;padding-bottom:12px;display:inline-flex;align-items:center;gap:24px;word-break:break-word;transition:color .2s,border-color .2s}
+    .email-link:hover{color:#d7ad96;border-color:#d7ad96}
+    .footer-bottom{margin-top:120px;padding-top:28px;border-top:1px solid #48564e;display:flex;align-items:center;justify-content:space-between;gap:24px;color:#a4b2a8;font-size:12px}
+    .footer-mark{color:#fff;font-weight:700;font-size:23px;letter-spacing:-.07em}
+    .footer-mark span{color:#d9ad95}
+    .footer-links{display:flex;align-items:center;gap:35px}
+    .footer-links a:hover{color:#fff}
+    .footer-bottom p{margin:0}
+
+    @media(max-width:1160px){
+      .desktop-nav{gap:27px}
+      .nav-contact{gap:10px}
+      .hero h1{font-size:clamp(55px,6vw,80px)}
+      .hero-grid{grid-template-columns:1.05fr .95fr}
+      .hero-photo-panel{min-height:540px}
+      .books-list{column-gap:36px}
+      .book{grid-template-columns:115px 1fr;gap:20px}
+      .book-art{width:115px;height:170px}
+      .book-info{min-height:170px}
+    }
+    @media(max-width:850px){
+      .container{width:min(var(--container),calc(100% - 48px))}
+      .header-inner{min-height:78px;grid-template-columns:1fr auto auto}
+      .desktop-nav{gap:21px}
+      .hero-grid{min-height:0;grid-template-columns:1fr .9fr}
+      .hero-content{padding:74px 18px 70px 0}
+      .hero h1{font-size:clamp(49px,6vw,65px);margin-top:27px}
+      .hero-description{font-size:15px;line-height:1.8}
+      .hero-photo-wrap{padding-top:25px}
+      .hero-photo-panel{min-height:520px}
+      .hero-photo-panel img{width:105%;max-height:91%}
+      .section-grid,.contact-inner{grid-template-columns:25% 75%}
+      .books-list{grid-template-columns:1fr;column-gap:0}
+      .book{grid-template-columns:125px 1fr}
+      .book-art{width:125px;height:179px}
+      .book-info{min-height:179px}
+      .book-note{max-width:320px}
+      .books-top{align-items:start}
+      .projects-grid{grid-template-columns:25% 75%}
+      .project-link{grid-template-columns:1fr;gap:14px}
+      .desktop-nav{gap:16px}
+      .desktop-nav a,.nav-contact{font-size:12px}
+      .music-grid{grid-template-columns:25% 75%}
+      .player-art{width:145px;height:145px;flex-basis:145px}
+      .player-card{min-height:199px;gap:21px;padding:22px}
+      .player-details{padding-right:36px}
+    }
+    @media(max-width:650px){
+      html{scroll-padding-top:75px}
+      .container{width:calc(100% - 40px)}
+      .header-inner{min-height:70px;grid-template-columns:1fr auto}
+      .brand{font-size:20px}
+      .desktop-nav,.nav-contact{display:none}
+      .menu-toggle{display:block}
+      .mobile-nav{display:block;visibility:hidden;opacity:0;transform:translateY(-8px);pointer-events:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:0 12px 24px rgba(0,0,0,.07);padding:14px 20px 22px;transition:opacity .2s ease,transform .2s ease,visibility .2s}
+      .mobile-nav.is-open{visibility:visible;opacity:1;transform:translateY(0);pointer-events:auto}
+      .mobile-nav a{font-size:16px;font-weight:600;display:block;padding:15px 5px;border-bottom:1px solid var(--line)}
+      .mobile-nav a:last-child{border:0;color:var(--accent)}
+      .hero-grid{grid-template-columns:1fr}
+      .hero-content{padding:66px 0 50px}
+      .hero h1{font-size:clamp(57px,11.5vw,80px);line-height:1;letter-spacing:-.075em;margin:26px 0 24px}
+      .hero-description{font-size:16px;margin-bottom:25px;max-width:450px}
+      .hero-actions{gap:20px}
+      .button-primary{padding:17px 20px;gap:21px}
+      .hero-photo-wrap{padding-top:0}
+      .hero-photo-panel{min-height:500px;height:500px}
+      .hero-photo-panel img{width:min(100%,440px);max-height:97%}
+      .hero-photo-panel::before{inset:16px}
+      .hero-photo-label{top:29px;left:27px}
+      .hero-photo-number{top:29px;right:28px}
+      .strip-inner{align-items:flex-start;flex-direction:column;gap:12px;padding:24px 0;min-height:0}
+      .strip-values{gap:13px;flex-wrap:wrap;font-size:12px}
+      .about,.books{padding:83px 0 90px}
+      .projects{padding:80px 0 88px}
+      .projects-grid{grid-template-columns:1fr;gap:27px}
+      .projects-description{margin:20px 0 34px}
+      .project-link{padding:26px 0 28px;gap:13px}
+      .project-name{font-size:32px}
+      .project-destination{font-size:12px;gap:12px}
+      .music{padding:80px 0 88px}
+      .music-grid{grid-template-columns:1fr;gap:29px}
+      .music-head{gap:16px;align-items:start;flex-direction:column;margin-bottom:24px}
+      .music-description{margin-top:15px}
+      .player-card{padding:18px;gap:18px;min-height:0}
+      .player-art{width:120px;height:120px;flex-basis:120px}
+      .player-art svg{width:64px;height:64px}
+      .player-details{padding:1px 16px 1px 0}
+      .player-status{margin:0 0 12px;font-size:9px;letter-spacing:.1em}
+      .track-title{font-size:23px;margin-bottom:5px}
+      .track-artist{font-size:13px}
+      .track-link{margin-top:13px;font-size:11px}
+      .player-bars{right:14px;bottom:14px;transform:scale(.7);transform-origin:bottom right}
+      .section-grid,.contact-inner{grid-template-columns:1fr;gap:27px}
+      .section-kicker{padding:0}
+      .section-title{font-size:clamp(43px,9vw,60px)}
+      .about-description{font-size:16px;line-height:1.85;margin:25px 0 38px}
+      .interests{gap:10px}
+      .interest-item{font-size:12px}
+      .books-top{display:block;margin-bottom:45px}
+      .books-intro{margin:21px 0 0;max-width:450px}
+      .book{grid-template-columns:105px 1fr;gap:19px;padding:24px 0}
+      .book-art{width:105px;height:155px}
+      .book-art span{font-size:16px;padding:13px}
+      .book-art small{font-size:7px}
+      .book h3{font-size:18px}
+      .book-info{min-height:155px}
+      .book-index{margin-bottom:11px}
+      .book-note{font-size:12px;line-height:1.5;margin-bottom:14px}
+      .book-author{margin-bottom:12px}
+      .contact{padding:83px 0 25px}
+      .contact-content h2{font-size:clamp(54px,10.3vw,78px)}
+      .contact-content p{font-size:15px}
+      .email-link{font-size:clamp(14px,4.1vw,22px);gap:15px}
+      .footer-bottom{margin-top:94px;align-items:start;flex-direction:column;gap:22px}
+      .footer-links{gap:26px}
+    }
+    @media(max-width:370px){
+      .hero h1{font-size:51px}
+      .hero-photo-panel{height:420px;min-height:420px}
+      .hero-actions{align-items:start;gap:14px;flex-direction:column}
+      .interests{grid-template-columns:1fr;gap:22px}
+      .interest-item span{margin-bottom:5px}
+      .player-card{gap:13px;padding:13px}
+      .player-art{width:95px;height:110px;flex-basis:95px}
+      .player-details{padding-right:0}
+      .track-title{font-size:19px}
+      .track-artist{font-size:12px}
+      .player-bars{display:none}
+      .book{grid-template-columns:95px 1fr;gap:15px}
+      .book-art{width:95px;height:144px}
+      .book-info{min-height:144px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+    /* Homepage expansion: restrained editorial details, no fake ratings or progress meters. */
+    .desktop-nav{gap:25px}
+    .desktop-nav a{font-size:12px;white-space:nowrap}
+    .now-preview{background:#f8f6ef;padding:124px 0;border-top:1px solid var(--line)}
+    .now-main,.skills-main,.notes-main{min-width:0}
+    .now-overline{display:flex;align-items:center;gap:11px;color:#7e887e;text-transform:uppercase;letter-spacing:.16em;font-size:10px;font-weight:700;margin:0 0 25px}
+    .now-dot{width:8px;height:8px;border-radius:50%;background:#789d77;box-shadow:0 0 0 4px rgba(120,157,119,.12);display:inline-block;flex:0 0 8px}
+    .now-divider{color:#bac1b6}
+    .now-intro{font-size:16px;line-height:1.8;color:var(--ink-soft);max-width:520px;margin:23px 0 44px}
+    .now-activity-list{border-top:1px solid var(--line)}
+    .now-activity{display:grid;grid-template-columns:45px 1fr 20px;gap:15px;align-items:center;padding:24px 0;border-bottom:1px solid var(--line)}
+    .now-activity-no{font-size:11px;color:#9ba59c;letter-spacing:.1em;align-self:start;padding-top:5px}
+    .now-activity h3{font-size:19px;font-weight:600;letter-spacing:-.037em;margin:0 0 6px}
+    .now-activity p{font-size:13px;line-height:1.7;color:var(--ink-soft);margin:0}
+    .now-activity-icon{color:#a9b5a8;font-size:20px;align-self:start}
+    .now-deep-link{margin-top:28px}
+    .skills{background:#e4e9e1;padding:112px 0 122px;border-top:1px solid #d5ddd1}
+    .skills-intro{font-size:15px;line-height:1.9;color:var(--ink-soft);margin:22px 0 38px}
+    .skill-lines{border-top:1px solid #bdc7bb}
+    .skill-line{display:grid;grid-template-columns:minmax(140px,195px) 1fr;gap:28px;border-bottom:1px solid #bdc7bb;padding:24px 0;align-items:center}
+    .skill-line-label{font-size:12px;font-weight:700;color:#657164;letter-spacing:.03em}
+    .skill-tags{display:flex;flex-wrap:wrap;gap:9px}
+    .skill-tags span{padding:11px 17px;background:rgba(255,255,255,.57);border:1px solid #c8d2c6;color:#2d3f32;font-size:13px;font-weight:600}
+    .books{background:#eeeee8;padding:120px 0 132px}
+    .books-top{margin-bottom:48px}
+    .currently-reading{background:#283a31;color:#f4f3ec;display:grid;grid-template-columns:40% 60%;min-height:470px;overflow:hidden;margin-bottom:72px}
+    .current-cover-area{background:#d9d3c2;padding:44px 25px 27px;display:flex;align-items:center;justify-content:center;gap:22px;flex-direction:column}
+    .current-book-art{width:215px;height:320px;box-shadow:12px 16px 25px rgba(28,32,27,.24);position:relative;display:flex;align-items:center;overflow:hidden;text-align:left}
+    .current-book-art:before{content:"";position:absolute;z-index:1;width:10px;height:100%;left:0;background:rgba(0,0,0,.1)}
+    .current-book-art span{display:block;padding:23px;font-family:Georgia,serif;font-size:26px;line-height:1.05;letter-spacing:-.05em}
+    .current-book-art small{display:block;margin-top:33px;font-family:var(--font-sans);font-size:10px;letter-spacing:.2em;font-weight:700}
+    .current-book-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;z-index:2}
+    .current-book-art img[hidden]{display:none}
+    .book-art--laws{color:#f9f0e0;background:linear-gradient(160deg,#873e32 0%,#c36e48 100%)}
+    .current-cover-caption{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#6c766c;font-weight:700}
+    .current-book-info{padding:60px clamp(35px,5vw,87px);display:flex;align-items:start;flex-direction:column;justify-content:center}
+    .current-label{display:flex;align-items:center;gap:12px;color:#d9ccb8;text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:700;margin:0 0 26px}
+    .current-book-info h3{font-size:clamp(43px,4.7vw,68px);line-height:1.02;letter-spacing:-.055em;font-weight:500;margin:0 0 15px;max-width:520px}
+    .current-book-info h3 em{font-family:var(--font-serif);color:#d6b49e;font-weight:400}
+    .current-author{font-size:13px;color:#c3cec4;margin:0}
+    .current-rule{width:42px;height:1px;background:#b1bcae;margin:26px 0}
+    .current-summary{font-size:15px;line-height:1.8;color:#ced7d0;max-width:420px;margin:0 0 26px}
+    .current-book-info .text-link{color:#f0dfcf;border-bottom-color:#8fa092}
+    .shelf-subhead{display:flex;align-items:end;justify-content:space-between;gap:20px;padding-bottom:18px}
+    .shelf-subhead h3{font-family:var(--font-serif);font-size:39px;font-weight:400;letter-spacing:-.03em;margin:0}
+    .shelf-subhead span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8c958d;font-weight:700}
+    .notes{padding:124px 0 130px;background:#f8f7f2;border-top:1px solid var(--line)}
+    .notes-headline{display:flex;gap:30px;align-items:end;justify-content:space-between}
+    .notes-index{font-size:10px;color:#9ba59b;letter-spacing:.15em;font-weight:700;white-space:nowrap;padding-bottom:10px}
+    .featured-note{border-top:1px solid var(--line);margin:35px 0 0;padding:40px 0 0}
+    .note-quote-mark{font-family:var(--font-serif);font-size:78px;line-height:.7;color:var(--accent)}
+    .featured-note blockquote{font-size:clamp(27px,3.2vw,44px);line-height:1.35;font-weight:500;letter-spacing:-.035em;margin:14px 0 32px;max-width:835px}
+    .featured-note figcaption{font-size:11px;color:#8b978d;text-transform:uppercase;font-weight:700;letter-spacing:.13em}
+    .contact{padding-top:114px}
+    .contact-overline{font-size:11px!important;text-transform:uppercase;letter-spacing:.17em;font-weight:700;color:#cfb49f!important;margin-bottom:24px!important}
+    .contact-main-action{background:#ece5d8;color:#26362c;padding:17px 24px;display:inline-flex;gap:62px;justify-content:space-between;align-items:center;font-size:13px;font-weight:700;margin-top:4px;transition:background .2s}
+    .contact-main-action:hover{background:#fff}
+    .contact-main-action span{font-size:22px}
+    .contact-channels{border-top:1px solid #4b5c4e;margin-top:63px}
+    .contact-channel{display:grid;grid-template-columns:110px 1fr auto;align-items:center;gap:20px;border-bottom:1px solid #4b5c4e;padding:23px 0;transition:color .2s}
+    .contact-channel:hover{color:#ebc6ac}
+    .channel-type{color:#b2bcb3;font-size:12px}
+    .channel-value{font-size:16px;font-weight:500;word-break:break-word}
+    .channel-arrow{font-size:21px}
+    @media(max-width:1070px){
+      .header-inner{grid-template-columns:1fr auto}
+      .desktop-nav,.nav-contact{display:none}
+      .menu-toggle{display:block}
+      .mobile-nav{display:block;visibility:hidden;opacity:0;transform:translateY(-8px);pointer-events:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:0 12px 24px rgba(0,0,0,.07);padding:14px 28px 22px;transition:opacity .2s ease,transform .2s ease,visibility .2s}
+      .mobile-nav.is-open{visibility:visible;opacity:1;transform:translateY(0);pointer-events:auto}
+      .mobile-nav a{font-size:16px;font-weight:600;display:block;padding:15px 5px;border-bottom:1px solid var(--line)}
+      .mobile-nav a:last-child{border:0;color:var(--accent)}
+    }
+    @media(max-width:850px){.currently-reading{grid-template-columns:41% 59%}.current-cover-area{padding:30px 16px}.current-book-art{width:170px;height:258px}.current-book-info{padding:40px 30px}.current-book-info h3{font-size:46px}}
+    @media(max-width:650px){
+      .now-preview,.skills,.notes{padding:80px 0 88px}
+      .currently-reading{grid-template-columns:1fr;margin-bottom:56px}
+      .current-cover-area{padding:30px 24px 23px}
+      .current-book-art{width:155px;height:232px}
+      .current-book-info{padding:35px 28px 39px}
+      .current-book-info h3{font-size:clamp(42px,10vw,54px)}
+      .current-label{margin-bottom:20px}
+      .current-rule{margin:20px 0}
+      .shelf-subhead h3{font-size:34px}
+      .books-top{margin-bottom:35px}
+      .now-activity{grid-template-columns:30px 1fr 16px;gap:11px}
+      .now-activity h3{font-size:17px}
+      .skill-line{grid-template-columns:1fr;gap:14px;padding:22px 0}
+      .notes-headline{display:block}
+      .notes-index{display:block;margin-top:20px}
+      .featured-note blockquote{font-size:30px}
+      .contact-channel{grid-template-columns:1fr auto;gap:7px}
+      .channel-type{grid-column:1;grid-row:1}
+      .channel-value{grid-column:1;grid-row:2;font-size:14px}
+      .channel-arrow{grid-column:2;grid-row:1 / 3}
+      .contact-channels{margin-top:44px}
+      .contact-main-action{gap:40px}
+    }
+    @media(max-width:370px){.now-activity{grid-template-columns:22px 1fr}.now-activity-icon{display:none}.featured-note blockquote{font-size:27px}}
+
+  
+    .header-actions{justify-self:end;display:flex;align-items:center;gap:12px}
+    .theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--line);background:rgba(255,254,250,.82);color:var(--ink);padding:11px 14px;border-radius:999px;min-height:46px;cursor:pointer;transition:transform .2s ease,background .2s ease,border-color .2s ease,color .2s ease;backdrop-filter:blur(12px)}
+    .theme-toggle:hover{transform:translateY(-2px);border-color:var(--accent)}
+    .theme-toggle-glyph{width:18px;height:18px;display:grid;place-items:center;flex:0 0 18px}
+    .theme-toggle-glyph svg{width:18px;height:18px;display:block}
+    .theme-toggle-label{font-size:12px;font-weight:700;letter-spacing:.02em}
+
+    body{padding-bottom:108px;transition:background-color .28s ease,color .28s ease}
+    .bottom-dock{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:140;display:flex;align-items:center;gap:8px;max-width:min(1180px,calc(100% - 30px));width:max-content;padding:10px 12px;background:rgba(255,254,250,.82);border:1px solid rgba(130,140,133,.22);box-shadow:0 18px 45px rgba(24,34,29,.13);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:999px;overflow-x:auto;scrollbar-width:none}
+    .bottom-dock::-webkit-scrollbar{display:none}
+    .dock-avatar{width:42px;height:42px;border-radius:50%;overflow:hidden;flex:0 0 42px;border:1px solid rgba(90,97,93,.16);box-shadow:0 6px 16px rgba(24,34,29,.12)}
+    .dock-avatar img{width:100%;height:100%;object-fit:cover}
+    .dock-divider{width:1px;height:30px;background:rgba(120,127,121,.2);flex:0 0 1px}
+    .dock-link,.dock-theme-toggle{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:999px;color:#4d5550;font-size:13px;font-weight:600;line-height:1;white-space:nowrap;flex:0 0 auto;transition:background .2s ease,color .2s ease,transform .2s ease,border-color .2s ease;border:1px solid transparent;background:transparent}
+    .dock-link:hover,.dock-theme-toggle:hover{color:var(--accent);transform:translateY(-2px)}
+    .dock-link svg,.dock-theme-toggle svg{width:18px;height:18px;display:block}
+    .dock-link.is-active{background:var(--dark);color:#fff;box-shadow:0 8px 18px rgba(20,28,25,.16)}
+    .dock-theme-toggle{border-color:rgba(120,127,121,.18);background:rgba(255,255,255,.35)}
+
+    html[data-theme="dark"]{--ink:#eef2ee;--ink-soft:#b7c2ba;--paper:#0f1412;--white:#131916;--sand:#1a221e;--line:#26312b;--accent:#d69b79;--dark:#1d2822}
+    html[data-theme="dark"] body{background:var(--paper);color:var(--ink)}
+    html[data-theme="dark"] .site-header,
+    html[data-theme="dark"] .about,
+    html[data-theme="dark"] .now-preview,
+    html[data-theme="dark"] .notes,
+    html[data-theme="dark"] .now-page-hero,
+    html[data-theme="dark"] .now-page-content,
+    html[data-theme="dark"] .now-page-footer{background:var(--paper)!important}
+    html[data-theme="dark"] .projects{background:#141b18!important}
+    html[data-theme="dark"] .skills{background:#17211d!important}
+    html[data-theme="dark"] .books{background:#111815!important}
+    html[data-theme="dark"] .hero-photo-panel{background:#1b231f}
+    html[data-theme="dark"] .hero-photo-label,html[data-theme="dark"] .hero-photo-number{color:#bdc8bf}
+    html[data-theme="dark"] .strip-values,html[data-theme="dark"] .project-destination,html[data-theme="dark"] .career-place,html[data-theme="dark"] .music-fineprint,html[data-theme="dark"] .channel-type{color:#a9b4ac}
+    html[data-theme="dark"] .career-entry,html[data-theme="dark"] .player-card,html[data-theme="dark"] .currently-reading,html[data-theme="dark"] .current-book-info,.current-cover-area{border-color:var(--line)}
+    html[data-theme="dark"] .career-entry{background:#151d19;border-color:#26312b}
+    html[data-theme="dark"] .current-cover-area{background:#1a231f}
+    html[data-theme="dark"] .current-book-info{background:#131916}
+    html[data-theme="dark"] .current-rule,html[data-theme="dark"] .skill-lines,html[data-theme="dark"] .project-link,html[data-theme="dark"] .contact-channels,html[data-theme="dark"] .contact-channel,html[data-theme="dark"] .interests,html[data-theme="dark"] .featured-note,html[data-theme="dark"] .footer-bottom,html[data-theme="dark"] .hero-bottom-strip,html[data-theme="dark"] .site-header{border-color:var(--line)!important}
+    html[data-theme="dark"] .skill-line,html[data-theme="dark"] .book,html[data-theme="dark"] .now-activity{border-color:#304038}
+    html[data-theme="dark"] .skill-icon-card{background:rgba(255,255,255,.02);border-color:#314038}
+    html[data-theme="dark"] .skill-icon-card:hover{background:rgba(255,255,255,.05);border-color:#54685d}
+    html[data-theme="dark"] .contact{background:#0a100d}
+    html[data-theme="dark"] .contact-main-action{background:#1c2520;color:#f3f4ef}
+    html[data-theme="dark"] .contact-main-action:hover{background:#243129}
+    html[data-theme="dark"] .bottom-dock{background:rgba(19,25,22,.86);border-color:rgba(197,210,201,.12);box-shadow:0 18px 45px rgba(0,0,0,.32)}
+    html[data-theme="dark"] .dock-link,html[data-theme="dark"] .dock-theme-toggle{color:#d3dbd4}
+    html[data-theme="dark"] .dock-theme-toggle{background:rgba(255,255,255,.03);border-color:rgba(197,210,201,.14)}
+    html[data-theme="dark"] .theme-toggle{background:rgba(19,25,22,.78);border-color:rgba(197,210,201,.14);color:#edf2ee}
+    html[data-theme="dark"] .mobile-nav{background:var(--paper)}
+    html[data-theme="dark"] .desktop-nav a,html[data-theme="dark"] .mobile-nav a{color:#cad4cc}
+    html[data-theme="dark"] .desktop-nav a:hover,html[data-theme="dark"] .desktop-nav a[aria-current="page"]{color:var(--accent)}
+    html[data-theme="dark"] .book-action,html[data-theme="dark"] .music-profile-link,html[data-theme="dark"] .track-link,html[data-theme="dark"] .email-link,html[data-theme="dark"] .nav-contact{border-color:#7c897f}
+
+    @media(max-width:1070px){.header-actions{gap:10px}.nav-contact{display:none}.theme-toggle .theme-toggle-label{display:none}.theme-toggle{padding:11px;min-width:46px}}
+    @media(max-width:650px){body{padding-bottom:96px}.bottom-dock{left:12px;right:12px;transform:none;bottom:12px;max-width:none;padding:9px 10px;gap:6px}.dock-link,.dock-theme-toggle{padding:10px 12px;font-size:12px}.dock-link-label{display:none}.dock-link svg,.dock-theme-toggle svg{width:17px;height:17px}.dock-avatar{width:38px;height:38px;flex-basis:38px}.dock-divider{height:26px}.header-actions{gap:8px}}
+
+
+    /* Icon-only theme toggles: controls keep accessible names while labels are visually removed. */
+    .header-actions .theme-toggle{width:44px;height:44px;min-width:44px;min-height:44px;padding:0;gap:0;border-radius:50%}
+    .bottom-dock .dock-theme-toggle{width:42px;height:42px;min-width:42px;min-height:42px;padding:0;gap:0;justify-content:center;border-radius:50%;cursor:pointer}
+    .theme-toggle-glyph{display:grid;place-items:center;width:20px;height:20px;flex:0 0 20px}
+    .theme-toggle-glyph svg{width:20px;height:20px}
+    html[data-theme="dark"] .dock-link.is-active{background:#e7ede7;color:#15221a}
+    html[data-theme="dark"] .hero-photo-cta{color:#212725}
+    html[data-theme="dark"] .project-name,html[data-theme="dark"] .portfolio-subheading,html[data-theme="dark"] .project-upcoming .project-name,html[data-theme="dark"] .interest-item,html[data-theme="dark"] .skill-line-label,html[data-theme="dark"] .skill-icon-label,html[data-theme="dark"] .book h3,html[data-theme="dark"] .now-activity h3{color:var(--ink)}
+    html[data-theme="dark"] .now-page-main .music{background:#17211c;border-color:var(--line)}
+    @media(max-width:650px){
+      .bottom-dock{gap:3px;padding:7px 8px;justify-content:space-between}
+      .bottom-dock .dock-link{padding:8px 7px}
+      .bottom-dock .dock-theme-toggle{width:33px;height:33px;min-width:33px;min-height:33px}
+      .dock-avatar{width:32px;height:32px;flex-basis:32px}
+      .dock-divider{height:21px}
+      .bottom-dock .dock-link svg{width:17px;height:17px}
+    }
+    @media(max-width:370px){
+      .bottom-dock{gap:2px;padding:6px 7px}
+      .bottom-dock .dock-link{padding:8px 5px}
+      .dock-avatar{width:29px;height:29px;flex-basis:29px}
+      .bottom-dock .dock-theme-toggle{width:31px;height:31px;min-width:31px;min-height:31px}
+    }
+
+    /* Icon-only theme toggles: controls keep accessible names while labels are visually removed. */
+    .header-actions .theme-toggle{width:44px;height:44px;min-width:44px;min-height:44px;padding:0;gap:0;border-radius:50%}
+    .bottom-dock .dock-theme-toggle{width:42px;height:42px;min-width:42px;min-height:42px;padding:0;gap:0;justify-content:center;border-radius:50%;cursor:pointer}
+    .theme-toggle-glyph{display:grid;place-items:center;width:20px;height:20px;flex:0 0 20px}
+    .theme-toggle-glyph svg{width:20px;height:20px}
+    html[data-theme="dark"] .dock-link.is-active{background:#e7ede7;color:#15221a}
+    html[data-theme="dark"] .hero-photo-cta{color:#212725}
+    html[data-theme="dark"] .project-name,html[data-theme="dark"] .portfolio-subheading,html[data-theme="dark"] .project-upcoming .project-name,html[data-theme="dark"] .interest-item,html[data-theme="dark"] .skill-line-label,html[data-theme="dark"] .skill-icon-label,html[data-theme="dark"] .book h3,html[data-theme="dark"] .now-activity h3{color:var(--ink)}
+    html[data-theme="dark"] .now-page-main .music{background:#17211c;border-color:var(--line)}
+    @media(max-width:650px){
+      .bottom-dock{gap:3px;padding:7px 8px;justify-content:space-between}
+      .bottom-dock .dock-link{padding:8px 7px}
+      .bottom-dock .dock-theme-toggle{width:33px;height:33px;min-width:33px;min-height:33px}
+      .dock-avatar{width:32px;height:32px;flex-basis:32px}
+      .dock-divider{height:21px}
+      .bottom-dock .dock-link svg{width:17px;height:17px}
+    }
+    @media(max-width:370px){
+      .bottom-dock{gap:2px;padding:6px 7px}
+      .bottom-dock .dock-link{padding:8px 5px}
+      .dock-avatar{width:29px;height:29px;flex-basis:29px}
+      .bottom-dock .dock-theme-toggle{width:31px;height:31px;min-width:31px;min-height:31px}
+    }
+
+    /* Refined editorial scroll transitions: low-amplitude and one-time only. */
+    @media (prefers-reduced-motion: no-preference){
+      .motion-on .scroll-reveal{opacity:0;transform:translate3d(0,24px,0);filter:blur(2px);transition:opacity .78s cubic-bezier(.22,1,.36,1),transform .78s cubic-bezier(.22,1,.36,1),filter .78s ease;transition-delay:var(--reveal-delay,0ms)}
+      .motion-on .scroll-reveal.is-revealed{opacity:1;transform:translate3d(0,0,0);filter:blur(0)}
+      .motion-on .reveal-on-scroll{opacity:1;transform:none;transition:none}
+      .motion-on .reveal-on-scroll.is-revealed{opacity:1;transform:none}
+      .bottom-dock{transition:box-shadow .3s ease,background-color .3s ease,border-color .3s ease}
+      .bottom-dock.is-scrolled{box-shadow:0 20px 52px rgba(24,34,29,.18)}
+      html[data-theme="dark"] .bottom-dock.is-scrolled{box-shadow:0 22px 56px rgba(0,0,0,.42)}
+    }
+    .dock-avatar{background:#f8f7f3;display:grid;place-items:center}
+    .dock-avatar img{display:block;width:100%;height:100%;object-fit:contain;padding:2px}
+    @media (prefers-reduced-motion: reduce){
+      .motion-on .scroll-reveal,.motion-on .reveal-on-scroll{opacity:1!important;transform:none!important;filter:none!important;transition:none!important}
+    }
+
+</style><style>
+.now-page-main{background:var(--paper)}
+.now-page-hero{padding:105px 0 102px;border-bottom:1px solid var(--line)}
+.now-page-hero h1{font-size:clamp(76px,11vw,150px);font-weight:500;letter-spacing:-.065em;line-height:1; margin:20px 0 22px}
+.now-page-hero h1 em{font-family:var(--font-serif);color:var(--accent);font-weight:400}
+.now-page-description{font-size:19px;color:var(--ink-soft);line-height:1.8;max-width:650px;margin:0}
+.now-page-content{padding:94px 0 140px}
+.now-page-content .section-grid{grid-template-columns:29% 71%}
+.now-page-subline{font-size:11px;color:#9ba59a;letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin-bottom:28px}
+.now-page-activity{display:grid;grid-template-columns:56px 1fr;border-top:1px solid var(--line);padding:33px 0;gap:22px}
+.now-page-activity:last-of-type{border-bottom:1px solid var(--line)}
+.now-page-activity .nr{font-size:11px;color:#9daba0;padding-top:5px}
+.now-page-activity h3{font-size:clamp(25px,3vw,36px);margin:0 0 12px;font-weight:500;letter-spacing:-.04em}
+.now-page-activity p{font-size:15px;line-height:1.85;color:var(--ink-soft);margin:0;max-width:595px}
+.now-page-end{padding:26px 0 0;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.now-page-end span{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#959f96}
+.now-page-footer{background:var(--dark);color:#fffefa;padding:38px 0}
+.now-page-footer .footer-bottom{margin:0;border:0;padding:0}
+@media(max-width:650px){.now-page-hero{padding:78px 0}.now-page-hero h1{font-size:80px}.now-page-description{font-size:16px}.now-page-content{padding:75px 0 95px}.now-page-content .section-grid{grid-template-columns:1fr;gap:40px}.now-page-activity{grid-template-columns:29px 1fr;gap:13px}.now-page-end{align-items:start;flex-direction:column}}
+
+    /* Light-touch motion: scroll progress, entrance transitions, and a soft cursor halo.
+       All effects are optional and respect reduced-motion + touch preferences. */
+    .scroll-progress{position:fixed;z-index:200;top:0;left:0;height:3px;width:100%;transform:scaleX(0);transform-origin:left;background:var(--accent);pointer-events:none;opacity:.9}
+    .cursor-halo{position:fixed;z-index:210;top:0;left:0;width:38px;height:38px;border-radius:50%;border:1px solid rgba(155,87,60,.55);background:rgba(155,87,60,.035);pointer-events:none;opacity:0;transform:translate3d(-80px,-80px,0);transition:opacity .18s ease,background .18s ease,border-color .18s ease;will-change:transform}
+    .cursor-halo.is-visible{opacity:1}
+    .cursor-halo.is-hovering{background:rgba(155,87,60,.13);border-color:rgba(155,87,60,.8)}
+    .cursor-halo.is-scrolling{background:rgba(155,87,60,.10);border-width:2px}
+    @media (prefers-reduced-motion:no-preference){
+      .motion-on .reveal-on-scroll{opacity:0;transform:translate3d(0,24px,0);transition:opacity .8s cubic-bezier(.2,.75,.25,1),transform .8s cubic-bezier(.2,.75,.25,1)}
+      .motion-on .reveal-on-scroll.is-revealed{opacity:1;transform:translate3d(0,0,0)}
+      .motion-on .skill-icon-card{transition:background .22s,border-color .22s,transform .28s cubic-bezier(.2,.75,.3,1)}
+      .motion-on .skill-icon-card:hover{transform:translateY(-5px)}
+    }
+    @media (hover:none),(pointer:coarse),(prefers-reduced-motion:reduce){.cursor-halo{display:none}.scroll-progress{display:none}}
+
+  /* Now Playing is part of the Now page, directly beneath the current-activities update. */
+  .now-page-main .music{background:#ebeee8;padding:100px 0 120px;border-top:1px solid #d6ddd3}
+  .now-page-main .music .section-title{font-size:clamp(42px,4.5vw,62px)}
+  .now-page-main .music-grid{grid-template-columns:29% 71%}
+  @media(max-width:850px){.now-page-main .music-grid{grid-template-columns:25% 75%}}
+  @media(max-width:650px){.now-page-main .music{padding:75px 0 90px}.now-page-main .music-grid{grid-template-columns:1fr;gap:23px}}
+
+    @media(min-width:1071px) and (max-width:1270px){.desktop-nav{gap:16px}.desktop-nav a{font-size:11px}.header-inner{gap:18px}.brand{font-size:20px}.nav-contact{font-size:11px;gap:7px}}
+
+    .header-actions{justify-self:end;display:flex;align-items:center;gap:12px}
+    .theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--line);background:rgba(255,254,250,.82);color:var(--ink);padding:11px 14px;border-radius:999px;min-height:46px;cursor:pointer;transition:transform .2s ease,background .2s ease,border-color .2s ease,color .2s ease;backdrop-filter:blur(12px)}
+    .theme-toggle:hover{transform:translateY(-2px);border-color:var(--accent)}
+    .theme-toggle-glyph{width:18px;height:18px;display:grid;place-items:center;flex:0 0 18px}
+    .theme-toggle-glyph svg{width:18px;height:18px;display:block}
+    .theme-toggle-label{font-size:12px;font-weight:700;letter-spacing:.02em}
+
+    body{padding-bottom:108px;transition:background-color .28s ease,color .28s ease}
+    .bottom-dock{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:140;display:flex;align-items:center;gap:8px;max-width:min(1180px,calc(100% - 30px));width:max-content;padding:10px 12px;background:rgba(255,254,250,.82);border:1px solid rgba(130,140,133,.22);box-shadow:0 18px 45px rgba(24,34,29,.13);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:999px;overflow-x:auto;scrollbar-width:none}
+    .bottom-dock::-webkit-scrollbar{display:none}
+    .dock-avatar{width:42px;height:42px;border-radius:50%;overflow:hidden;flex:0 0 42px;border:1px solid rgba(90,97,93,.16);box-shadow:0 6px 16px rgba(24,34,29,.12)}
+    .dock-avatar img{width:100%;height:100%;object-fit:cover}
+    .dock-divider{width:1px;height:30px;background:rgba(120,127,121,.2);flex:0 0 1px}
+    .dock-link,.dock-theme-toggle{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:999px;color:#4d5550;font-size:13px;font-weight:600;line-height:1;white-space:nowrap;flex:0 0 auto;transition:background .2s ease,color .2s ease,transform .2s ease,border-color .2s ease;border:1px solid transparent;background:transparent}
+    .dock-link:hover,.dock-theme-toggle:hover{color:var(--accent);transform:translateY(-2px)}
+    .dock-link svg,.dock-theme-toggle svg{width:18px;height:18px;display:block}
+    .dock-link.is-active{background:var(--dark);color:#fff;box-shadow:0 8px 18px rgba(20,28,25,.16)}
+    .dock-theme-toggle{border-color:rgba(120,127,121,.18);background:rgba(255,255,255,.35)}
+
+    html[data-theme="dark"]{--ink:#eef2ee;--ink-soft:#b7c2ba;--paper:#0f1412;--white:#131916;--sand:#1a221e;--line:#26312b;--accent:#d69b79;--dark:#1d2822}
+    html[data-theme="dark"] body{background:var(--paper);color:var(--ink)}
+    html[data-theme="dark"] .site-header,
+    html[data-theme="dark"] .about,
+    html[data-theme="dark"] .now-preview,
+    html[data-theme="dark"] .notes,
+    html[data-theme="dark"] .now-page-hero,
+    html[data-theme="dark"] .now-page-content,
+    html[data-theme="dark"] .now-page-footer{background:var(--paper)!important}
+    html[data-theme="dark"] .projects{background:#141b18!important}
+    html[data-theme="dark"] .skills{background:#17211d!important}
+    html[data-theme="dark"] .books{background:#111815!important}
+    html[data-theme="dark"] .hero-photo-panel{background:#1b231f}
+    html[data-theme="dark"] .hero-photo-label,html[data-theme="dark"] .hero-photo-number{color:#bdc8bf}
+    html[data-theme="dark"] .strip-values,html[data-theme="dark"] .project-destination,html[data-theme="dark"] .career-place,html[data-theme="dark"] .music-fineprint,html[data-theme="dark"] .channel-type{color:#a9b4ac}
+    html[data-theme="dark"] .career-entry,html[data-theme="dark"] .player-card,html[data-theme="dark"] .currently-reading,html[data-theme="dark"] .current-book-info,.current-cover-area{border-color:var(--line)}
+    html[data-theme="dark"] .career-entry{background:#151d19;border-color:#26312b}
+    html[data-theme="dark"] .current-cover-area{background:#1a231f}
+    html[data-theme="dark"] .current-book-info{background:#131916}
+    html[data-theme="dark"] .current-rule,html[data-theme="dark"] .skill-lines,html[data-theme="dark"] .project-link,html[data-theme="dark"] .contact-channels,html[data-theme="dark"] .contact-channel,html[data-theme="dark"] .interests,html[data-theme="dark"] .featured-note,html[data-theme="dark"] .footer-bottom,html[data-theme="dark"] .hero-bottom-strip,html[data-theme="dark"] .site-header{border-color:var(--line)!important}
+    html[data-theme="dark"] .skill-line,html[data-theme="dark"] .book,html[data-theme="dark"] .now-activity{border-color:#304038}
+    html[data-theme="dark"] .skill-icon-card{background:rgba(255,255,255,.02);border-color:#314038}
+    html[data-theme="dark"] .skill-icon-card:hover{background:rgba(255,255,255,.05);border-color:#54685d}
+    html[data-theme="dark"] .contact{background:#0a100d}
+    html[data-theme="dark"] .contact-main-action{background:#1c2520;color:#f3f4ef}
+    html[data-theme="dark"] .contact-main-action:hover{background:#243129}
+    html[data-theme="dark"] .bottom-dock{background:rgba(19,25,22,.86);border-color:rgba(197,210,201,.12);box-shadow:0 18px 45px rgba(0,0,0,.32)}
+    html[data-theme="dark"] .dock-link,html[data-theme="dark"] .dock-theme-toggle{color:#d3dbd4}
+    html[data-theme="dark"] .dock-theme-toggle{background:rgba(255,255,255,.03);border-color:rgba(197,210,201,.14)}
+    html[data-theme="dark"] .theme-toggle{background:rgba(19,25,22,.78);border-color:rgba(197,210,201,.14);color:#edf2ee}
+    html[data-theme="dark"] .mobile-nav{background:var(--paper)}
+    html[data-theme="dark"] .desktop-nav a,html[data-theme="dark"] .mobile-nav a{color:#cad4cc}
+    html[data-theme="dark"] .desktop-nav a:hover,html[data-theme="dark"] .desktop-nav a[aria-current="page"]{color:var(--accent)}
+    html[data-theme="dark"] .book-action,html[data-theme="dark"] .music-profile-link,html[data-theme="dark"] .track-link,html[data-theme="dark"] .email-link,html[data-theme="dark"] .nav-contact{border-color:#7c897f}
+
+    @media(max-width:1070px){.header-actions{gap:10px}.nav-contact{display:none}.theme-toggle .theme-toggle-label{display:none}.theme-toggle{padding:11px;min-width:46px}}
+    @media(max-width:650px){body{padding-bottom:96px}.bottom-dock{left:12px;right:12px;transform:none;bottom:12px;max-width:none;padding:9px 10px;gap:6px}.dock-link,.dock-theme-toggle{padding:10px 12px;font-size:12px}.dock-link-label{display:none}.dock-link svg,.dock-theme-toggle svg{width:17px;height:17px}.dock-avatar{width:38px;height:38px;flex-basis:38px}.dock-divider{height:26px}.header-actions{gap:8px}}
+
+
+    /* Icon-only theme toggles: controls keep accessible names while labels are visually removed. */
+    .header-actions .theme-toggle{width:44px;height:44px;min-width:44px;min-height:44px;padding:0;gap:0;border-radius:50%}
+    .bottom-dock .dock-theme-toggle{width:42px;height:42px;min-width:42px;min-height:42px;padding:0;gap:0;justify-content:center;border-radius:50%;cursor:pointer}
+    .theme-toggle-glyph{display:grid;place-items:center;width:20px;height:20px;flex:0 0 20px}
+    .theme-toggle-glyph svg{width:20px;height:20px}
+    html[data-theme="dark"] .dock-link.is-active{background:#e7ede7;color:#15221a}
+    html[data-theme="dark"] .hero-photo-cta{color:#212725}
+    html[data-theme="dark"] .project-name,html[data-theme="dark"] .portfolio-subheading,html[data-theme="dark"] .project-upcoming .project-name,html[data-theme="dark"] .interest-item,html[data-theme="dark"] .skill-line-label,html[data-theme="dark"] .skill-icon-label,html[data-theme="dark"] .book h3,html[data-theme="dark"] .now-activity h3{color:var(--ink)}
+    html[data-theme="dark"] .now-page-main .music{background:#17211c;border-color:var(--line)}
+    @media(max-width:650px){
+      .bottom-dock{gap:3px;padding:7px 8px;justify-content:space-between}
+      .bottom-dock .dock-link{padding:8px 7px}
+      .bottom-dock .dock-theme-toggle{width:33px;height:33px;min-width:33px;min-height:33px}
+      .dock-avatar{width:32px;height:32px;flex-basis:32px}
+      .dock-divider{height:21px}
+      .bottom-dock .dock-link svg{width:17px;height:17px}
+    }
+    @media(max-width:370px){
+      .bottom-dock{gap:2px;padding:6px 7px}
+      .bottom-dock .dock-link{padding:8px 5px}
+      .dock-avatar{width:29px;height:29px;flex-basis:29px}
+      .bottom-dock .dock-theme-toggle{width:31px;height:31px;min-width:31px;min-height:31px}
+    }
+</style><style>
+
+    /* Shared navigation states: top navigation and floating dock feel like one system. */
+    .desktop-nav{gap:4px}
+    .desktop-nav a,.bottom-dock .dock-link,.mobile-nav a{
+      border-radius:999px;
+      transition:background-color .22s ease,color .22s ease,box-shadow .22s ease,transform .22s ease;
+    }
+    .desktop-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:10px 12px;color:var(--ink-soft);white-space:nowrap}
+    .desktop-nav a:hover,.desktop-nav a:focus-visible,
+    .bottom-dock .dock-link:hover,.bottom-dock .dock-link:focus-visible,
+    .mobile-nav a:hover,.mobile-nav a:focus-visible{
+      background:#f0e3da;color:#8d492e;transform:translateY(-2px);
+    }
+    .desktop-nav a.is-active,.bottom-dock .dock-link.is-active,
+    .mobile-nav a.is-active{
+      background:#26382e;color:#fff;box-shadow:0 7px 17px rgba(26,44,33,.13);
+    }
+    .desktop-nav a.is-active:hover,.desktop-nav a.is-active:focus-visible,
+    .bottom-dock .dock-link.is-active:hover,.bottom-dock .dock-link.is-active:focus-visible,
+    .mobile-nav a.is-active:hover,.mobile-nav a.is-active:focus-visible{
+      background:#395747;color:#fff;transform:translateY(-2px);
+    }
+    .bottom-dock .dock-link{will-change:background-color}
+    html[data-theme="dark"] .desktop-nav a,
+    html[data-theme="dark"] .bottom-dock .dock-link,
+    html[data-theme="dark"] .mobile-nav a{color:#ced8d0}
+    html[data-theme="dark"] .desktop-nav a:hover,
+    html[data-theme="dark"] .bottom-dock .dock-link:hover,
+    html[data-theme="dark"] .mobile-nav a:hover,
+    html[data-theme="dark"] .desktop-nav a:focus-visible,
+    html[data-theme="dark"] .bottom-dock .dock-link:focus-visible,
+    html[data-theme="dark"] .mobile-nav a:focus-visible{background:#3c2d26;color:#f2b999}
+    html[data-theme="dark"] .desktop-nav a.is-active,
+    html[data-theme="dark"] .bottom-dock .dock-link.is-active,
+    html[data-theme="dark"] .mobile-nav a.is-active{background:#e8eee8;color:#16231c;box-shadow:none}
+    html[data-theme="dark"] .desktop-nav a.is-active:hover,
+    html[data-theme="dark"] .bottom-dock .dock-link.is-active:hover,
+    html[data-theme="dark"] .mobile-nav a.is-active:hover,
+    html[data-theme="dark"] .desktop-nav a.is-active:focus-visible,
+    html[data-theme="dark"] .bottom-dock .dock-link.is-active:focus-visible,
+    html[data-theme="dark"] .mobile-nav a.is-active:focus-visible{background:#d1dfd3;color:#142017}
+    .mobile-nav a{border-radius:12px;padding-inline:14px}
+    @media(min-width:1071px) and (max-width:1270px){.desktop-nav{gap:0}.desktop-nav a{padding:10px 7px;font-size:11px}}
+    @media(max-width:650px){.bottom-dock .dock-link:hover,.bottom-dock .dock-link:focus-visible{transform:none}}
+    @media(prefers-reduced-motion:reduce){.desktop-nav a,.bottom-dock .dock-link,.mobile-nav a{transition:none!important;transform:none!important}}
+
+</style>
+</head><body data-page="now"><a class="skip-link" href="#main">Skip to content</a><header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#top" aria-label="T.J. Seimela, back to top">T.J. <span>SEIMELA</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#skills">Skills &amp; Tools</a>
+        <a href="#now-top">Now</a>
+        <a href="index.html#books">Bookshelf</a>
+        <a href="index.html#notes">Notes</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      
+      <div class="header-actions">
+        <a class="nav-contact" href="mailto:tjseimelasocialmedia@gmail.com">Let's connect <span class="arrow" aria-hidden="true">↗</span></a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Switch to dark mode"><span class="theme-toggle-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.2M12 19.3v2.2M4.7 4.7l1.6 1.6M17.7 17.7l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.7 19.3l1.6-1.6M17.7 6.3l1.6-1.6"/></svg></span></button>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="mobile-nav" aria-expanded="false">
+          <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+        </button>
+      </div>
+
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true" inert>
+      <a href="index.html#about">About</a>
+      <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#skills">Skills &amp; Tools</a>
+      <a href="#now-top">Now</a>
+      <a href="index.html#books">Bookshelf</a>
+      <a href="index.html#notes">Notes</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="mailto:tjseimelasocialmedia@gmail.com">Let's connect ↗</a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Switch to dark mode"><span class="theme-toggle-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.2M12 19.3v2.2M4.7 4.7l1.6 1.6M17.7 17.7l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.7 19.3l1.6-1.6M17.7 6.3l1.6-1.6"/></svg></span></button>
+    </nav>
+  </header>
+<main class="now-page-main" id="main"><section id="now-top" class="now-page-hero"><div class="container"><p class="eyebrow">A snapshot of the present · October 2026</p><h1>My <em>now.</em></h1><p class="now-page-description">A little more about where my attention is going right now — what I'm studying, what I'm learning, and what I'm trying to get better at.</p></div></section>
+<section class="now-page-content"><div class="container section-grid"><div class="section-kicker"><span>01</span> / What I'm up to</div><div><p class="now-page-subline">In progress · updated October 2026</p>
+<div class="now-page-activity"><span class="nr">01</span><div><h3>Learning about artificial intelligence</h3><p>Exploring AI and its practical possibilities. It's a subject I'm curious about, and I'm making time to understand it more deeply.</p></div></div>
+<div class="now-page-activity"><span class="nr">02</span><div><h3>Building my web development skills</h3><p>Learning by building — sharpening my understanding of HTML, CSS, JavaScript, PHP, and how real websites come together.</p></div></div>
+<div class="now-page-activity"><span class="nr">03</span><div><h3>Studying Information Technology</h3><p>I'm currently a third-year IT student at Vaal University of Technology. My studies are helping me build a broader foundation in technology and problem-solving.</p></div></div>
+<div class="now-page-end"><span>Small steps. Real progress.</span><a href="index.html#portfolio" class="text-link">See what I'm building <span aria-hidden="true">↗</span></a></div>
+</div></div></section>
+    <section id="music" class="music" aria-labelledby="music-title-heading">
+      <div class="container music-grid">
+        <div class="section-kicker"><span>02</span> / Now playing</div>
+        <div class="music-main">
+          <div class="music-head">
+            <div>
+              <h2 class="section-title" id="music-title-heading">In my <em>headphones.</em></h2>
+              <p class="music-description">A little glimpse into what I've been listening to lately.</p>
+            </div>
+            <a class="music-profile-link" href="https://www.last.fm/user/tjseimela" target="_blank" rel="noopener noreferrer">My Last.fm <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="player-card" id="player-card" aria-label="Latest listening activity from Last.fm">
+            <div class="player-art" id="player-art">
+              <svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><circle cx="50" cy="50" r="43" stroke="currentColor" stroke-width="1.4"/><circle cx="50" cy="50" r="28" stroke="currentColor" stroke-width="1" opacity=".6"/><circle cx="50" cy="50" r="12" stroke="currentColor" stroke-width="1.4"/><circle cx="50" cy="50" r="3" fill="currentColor"/></svg>
+              <img id="player-cover" alt="" hidden>
+            </div>
+            <div class="player-details">
+              <p class="player-status"><span class="player-led" aria-hidden="true"></span><span id="player-state">Checking Last.fm</span></p>
+              <h3 class="track-title" id="player-track" aria-live="polite">Finding the latest track…</h3>
+              <p class="track-artist" id="player-artist">One moment.</p>
+              <p class="track-album" id="player-album"></p>
+              <a class="track-link" id="player-link" href="https://www.last.fm/user/tjseimela" target="_blank" rel="noopener noreferrer">View on Last.fm <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="player-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <p class="music-fineprint" id="player-note">Updated automatically from Last.fm while this page is open.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+</main>
+
+  <nav class="bottom-dock" aria-label="Quick navigation dock">
+    <a class="dock-avatar" href="#top" aria-label="Back to top"><img src="assets/tj-monogram.svg" alt=""></a>
+    <span class="dock-divider" aria-hidden="true"></span>
+    <a class="dock-link" href="index.html#about" data-dock="about"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="8" r="4"/></svg><span class="dock-link-label">About</span></a>
+    <a class="dock-link" href="index.html#portfolio" data-dock="portfolio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h18v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg><span class="dock-link-label">Portfolio</span></a>
+    <a class="dock-link" href="index.html#skills" data-dock="skills"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="4" rx="1"/><rect x="4" y="10" width="16" height="4" rx="1"/><rect x="4" y="16" width="16" height="4" rx="1"/></svg><span class="dock-link-label">Skills</span></a>
+    <a class="dock-link" href="now.html" data-dock="now"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg><span class="dock-link-label">Now</span></a>
+    <a class="dock-link" href="index.html#books" data-dock="books"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 0 4 22z"/><path d="M8 7h8"/><path d="M8 11h8"/></svg><span class="dock-link-label">Bookshelf</span></a>
+    <a class="dock-link" href="index.html#notes" data-dock="notes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14v12H8l-3 3z"/><path d="M9 8h6"/><path d="M9 12h4"/></svg><span class="dock-link-label">Notes</span></a>
+    <a class="dock-link" href="index.html#contact" data-dock="contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg><span class="dock-link-label">Contact</span></a>
+    <button class="dock-theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Switch to dark mode"><span class="theme-toggle-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.2M12 19.3v2.2M4.7 4.7l1.6 1.6M17.7 17.7l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.7 19.3l1.6-1.6M17.7 6.3l1.6-1.6"/></svg></span></button>
+  </nav>
+
+<div class="now-page-footer"><div class="container"><footer class="footer-bottom"><a class="footer-mark" href="index.html#top">T.J. <span>SEIMELA</span></a><p>© <span id="year">2026</span> T.J. Seimela. All rights reserved.</p><div class="footer-links"><a href="index.html#portfolio">Portfolio ↗</a><a href="https://www.linkedin.com/in/thabisojamesseimela/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="index.html#contact">Contact ↗</a></div></footer></div></div>
+<script>const menuButton=document.querySelector('.menu-toggle'),mobileNav=document.getElementById('mobile-nav');function setMenu(open){menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close navigation':'Open navigation');mobileNav.classList.toggle('is-open',open);mobileNav.setAttribute('aria-hidden',String(!open));mobileNav.inert=!open;document.body.classList.toggle('menu-open',open);menuButton.querySelector('svg').innerHTML=open?'<path d="M5 5l14 14M19 5L5 19"/>':'<path d="M3 7h18M3 12h18M3 17h18"/>';}menuButton.addEventListener('click',()=>setMenu(menuButton.getAttribute('aria-expanded')!=='true'));mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));window.matchMedia('(min-width: 1071px)').addEventListener('change',e=>{if(e.matches)setMenu(false)});document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});document.getElementById('year').textContent=new Date().getFullYear();    // Public Last.fm activity, via a community JSON endpoint. Never treats a previous
+    // track as live: only the Last.fm nowplaying flag enables the "Listening now" state.
+    const lastfmUsername = 'tjseimela';
+    const lastfmProfile = `https://www.last.fm/user/${lastfmUsername}`;
+    const lastfmEndpoint = `https://lastfm-last-played.biancarosa.com.br/${lastfmUsername}/latest-song`;
+    const playerCard = document.getElementById('player-card');
+    const playerState = document.getElementById('player-state');
+    const playerTrack = document.getElementById('player-track');
+    const playerArtist = document.getElementById('player-artist');
+    const playerAlbum = document.getElementById('player-album');
+    const playerCover = document.getElementById('player-cover');
+    const playerLink = document.getElementById('player-link');
+    const playerNote = document.getElementById('player-note');
+    let lastSuccessfulUpdate = 0;
+
+    function safeLastfmTrackUrl(value) {
+      try {
+        const url = new URL(value);
+        return url.protocol === 'https:' && (url.hostname === 'last.fm' || url.hostname.endsWith('.last.fm')) ? url.href : lastfmProfile;
+      } catch { return lastfmProfile; }
+    }
+    function getArtwork(track) {
+      const images = Array.isArray(track.image) ? track.image : [];
+      const candidates = images.slice().reverse();
+      for (const image of candidates) {
+        const value = image?.['#text'];
+        if (!value || /2a96cbd8b46e442fc41c2b86b821562f/i.test(value)) continue;
+        try {
+          const url = new URL(value);
+          if (url.protocol === 'https:' && (url.hostname === 'lastfm.freetls.fastly.net' || url.hostname.endsWith('.last.fm'))) return url.href;
+        } catch {}
+      }
+      return null;
+    }
+    function renderListeningTrack(track) {
+      const artist = typeof track.artist === 'string' ? track.artist : track.artist?.['#text'];
+      const title = typeof track.name === 'string' ? track.name.trim() : '';
+      if (!title || !artist) throw new Error('No recent track');
+      const isPlaying = String(track['@attr']?.nowplaying ?? track.nowplaying ?? '').toLowerCase() === 'true';
+      const album = typeof track.album === 'string' ? track.album : track.album?.['#text'];
+      playerCard.classList.toggle('is-playing', isPlaying);
+      playerState.textContent = isPlaying ? 'Listening now' : 'Last played';
+      playerTrack.textContent = title;
+      playerArtist.textContent = artist;
+      playerAlbum.textContent = album || '';
+      playerLink.href = safeLastfmTrackUrl(track.url);
+      playerLink.setAttribute('aria-label', `View ${title} by ${artist} on Last.fm`);
+      const artwork = getArtwork(track);
+      if (artwork) {
+        playerCover.hidden = true;
+        playerCover.onload = () => { playerCover.hidden = false; };
+        playerCover.onerror = () => { playerCover.hidden = true; };
+        playerCover.src = artwork;
+      } else {
+        playerCover.removeAttribute('src');
+        playerCover.hidden = true;
+      }
+      playerNote.textContent = isPlaying
+        ? 'Live listening activity via Last.fm · Refreshes every 45 seconds.'
+        : 'Not listening right now · Showing the latest track recorded on Last.fm.';
+      lastSuccessfulUpdate = Date.now();
+    }
+    function renderUnavailable() {
+      playerCard.classList.remove('is-playing');
+      playerCover.hidden = true;
+      playerState.textContent = 'Last.fm status unavailable';
+      playerTrack.textContent = 'Music lives here.';
+      playerArtist.textContent = 'Visit my Last.fm profile to see what I’ve been playing.';
+      playerAlbum.textContent = '';
+      playerLink.href = lastfmProfile;
+      playerLink.setAttribute('aria-label', 'View T.J. Seimela on Last.fm');
+      playerNote.textContent = 'Listening data could not be reached right now. The page will retry automatically.';
+    }
+    async function refreshLastfm() {
+      if (document.hidden) return;
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 10000);
+      try {
+        const response = await fetch(lastfmEndpoint, { signal: controller.signal, cache: 'no-store' });
+        if (!response.ok) throw new Error(`Last.fm service returned ${response.status}`);
+        const payload = await response.json();
+        const track = payload?.track ?? payload?.recenttracks?.track?.[0];
+        renderListeningTrack(track);
+      } catch (error) {
+        // Keep the previous successful result on momentary network failures,
+        // but never leave a stale song marked as currently playing.
+        playerCard.classList.remove('is-playing');
+        if (lastSuccessfulUpdate) {
+          playerState.textContent = 'Last known track';
+          playerNote.textContent = 'Can’t refresh Last.fm right now. Retrying automatically.';
+        } else {
+          renderUnavailable();
+        }
+      } finally {
+        clearTimeout(timeout);
+      }
+    }
+    refreshLastfm();
+    setInterval(refreshLastfm, 45000);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) refreshLastfm(); });
+
+
+    // Gentle scroll reveal + page progress. Without JS, all content is visible.
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduced) return;
+      const sections = document.querySelectorAll('main section');
+      const progress = document.createElement('div');
+      progress.className = 'scroll-progress';
+      progress.setAttribute('aria-hidden', 'true');
+      document.body.appendChild(progress);
+      if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-revealed');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {threshold: 0.075, rootMargin: '0px 0px -16px 0px'});
+        sections.forEach(section => {
+          section.classList.add('reveal-on-scroll');
+          revealObserver.observe(section);
+        });
+        document.documentElement.classList.add('motion-on');
+      }
+      const finePointer = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+      let cursor, targetX = -80, targetY = -80, x = -80, y = -80, scrollCounter = 0;
+      if (finePointer) {
+        cursor = document.createElement('div');
+        cursor.className = 'cursor-halo';
+        cursor.setAttribute('aria-hidden', 'true');
+        document.body.appendChild(cursor);
+        document.addEventListener('pointermove', event => {
+          if (event.pointerType && event.pointerType !== 'mouse') return;
+          targetX = event.clientX - 19;
+          targetY = event.clientY - 19;
+          cursor.classList.add('is-visible');
+        }, {passive:true});
+        document.addEventListener('pointerover', event => {
+          cursor.classList.toggle('is-hovering', Boolean(event.target.closest('a, button, .skill-icon-card')));
+        }, {passive:true});
+        document.addEventListener('mouseout', event => {
+          if (!event.relatedTarget) cursor.classList.remove('is-visible');
+        }, {passive:true});
+        const drift = () => {
+          x += (targetX - x) * .16;
+          y += (targetY - y) * .16;
+          cursor.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+          requestAnimationFrame(drift);
+        };
+        requestAnimationFrame(drift);
+      }
+      let pending = false;
+      const updateScroll = () => {
+        const total = document.documentElement.scrollHeight - innerHeight;
+        progress.style.transform = `scaleX(${total > 0 ? Math.min(1, Math.max(0, scrollY / total)) : 0})`;
+        if (cursor) {
+          cursor.classList.add('is-scrolling');
+          const id = ++scrollCounter;
+          // Return to the normal halo after scroll stops; no lingering effects.
+          setTimeout(() => {if (id === scrollCounter) cursor.classList.remove('is-scrolling')}, 220);
+        }
+        pending = false;
+      };
+      addEventListener('scroll', () => {
+        if (!pending) {pending = true; requestAnimationFrame(updateScroll)}
+      }, {passive:true});
+      addEventListener('resize', updateScroll, {passive:true});
+      updateScroll();
+    })();
+</script>
+
+<script>
+(function(){
+  const buttons=document.querySelectorAll('[data-theme-toggle]');
+  const meta=document.querySelector('meta[name="theme-color"]');
+  const sun='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.2M12 19.3v2.2M4.7 4.7l1.6 1.6M17.7 17.7l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.7 19.3l1.6-1.6M17.7 6.3l1.6-1.6"/></svg>';
+  const moon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.4 14.5A8.5 8.5 0 1 1 9.5 3.6a7 7 0 1 0 10.9 10.9Z"/></svg>';
+  function apply(theme){
+    document.documentElement.dataset.theme=theme;
+    if(meta)meta.setAttribute('content',theme==='dark'?'#0f1412':'#f7f6f2');
+    buttons.forEach(b=>{
+      b.setAttribute('aria-pressed',String(theme==='dark'));
+      const label=theme==='dark'?'Switch to light mode':'Switch to dark mode';
+      b.setAttribute('aria-label',label);b.setAttribute('title',label);
+      const glyph=b.querySelector('.theme-toggle-glyph');if(glyph)glyph.innerHTML=theme==='dark'?moon:sun;
+    });
+  }
+  buttons.forEach(b=>b.addEventListener('click',()=>{
+    const next=document.documentElement.dataset.theme==='dark'?'light':'dark';
+    try{localStorage.setItem('tj-theme',next)}catch(e){}
+    apply(next);
+  }));
+  apply(document.documentElement.dataset.theme||'light');
+  document.querySelectorAll('.desktop-nav a,.mobile-nav a,.bottom-dock .dock-link').forEach(link=>{
+    const active=link.getAttribute('href')==='#now-top'||link.getAttribute('data-dock')==='now';
+    link.classList.toggle('is-active',active);
+    if(active)link.setAttribute('aria-current','page');
+    else link.removeAttribute('aria-current');
+  });
+})();
+</script>
+
+  <script>
+  // Smooth, intentional anchor transitions (other pages and external links are untouched).
+  (() => {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let activeAnimation = 0;
+    let originalBehavior = '';
+    const cancelScroll = () => {
+      if(activeAnimation){ cancelAnimationFrame(activeAnimation); activeAnimation = 0; document.documentElement.style.scrollBehavior = originalBehavior; }
+    };
+    ['wheel','touchstart'].forEach(type => window.addEventListener(type,cancelScroll,{passive:true}));
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click',event => {
+        if(event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        const hash = anchor.getAttribute('href');
+        if(!hash || hash==='#') return;
+        const target = document.getElementById(decodeURIComponent(hash.slice(1)));
+        if(!target) return;
+        event.preventDefault();
+        cancelScroll();
+        if(location.hash !== hash) history.pushState(null,'',hash);
+        if(reduce.matches){target.scrollIntoView({behavior:'instant',block:'start'});return;}
+        const from = scrollY;
+        const to = Math.max(0, Math.min(document.documentElement.scrollHeight-innerHeight, from + target.getBoundingClientRect().top - 18));
+        const distance = to-from;
+        if(Math.abs(distance)<3) return;
+        const duration = Math.min(1020, Math.max(550, Math.abs(distance)*.43));
+        const start = performance.now();
+        originalBehavior = document.documentElement.style.scrollBehavior;
+        document.documentElement.style.scrollBehavior = 'auto';
+        const tick = now => {
+          const t = Math.min(1,(now-start)/duration);
+          const eased = t<.5 ? 4*t*t*t : 1-Math.pow(-2*t+2,3)/2;
+          window.scrollTo({top:from+distance*eased,behavior:'instant'});
+          if(t<1){activeAnimation=requestAnimationFrame(tick);}else{activeAnimation=0;document.documentElement.style.scrollBehavior=originalBehavior;}
+        };
+        activeAnimation=requestAnimationFrame(tick);
+      });
+    });
+
+    // Stagger elements gently as they enter the viewport; all content stays visible without JS.
+    const dock=document.querySelector('.bottom-dock');
+    const setDockShadow=()=>dock && dock.classList.toggle('is-scrolled',scrollY>90);
+    addEventListener('scroll',setDockShadow,{passive:true});
+    setDockShadow();
+    if(reduce.matches || !('IntersectionObserver' in window)) return;
+    const selector = [
+      '#about .section-title','#about .about-description','#about .interests','#about .career-title','#about .career-entry',
+      '#portfolio .section-title','#portfolio .projects-description','#portfolio .project-link',
+      '#skills .section-title','#skills .skills-intro','#skills .skill-line',
+      '#now .section-title','#now .now-intro','#now .now-activity','#now .now-deep-link',
+      '#books .section-title','#books .currently-reading','#books .shelf-subhead','#books .book',
+      '#notes .section-title','#notes .featured-note',
+      '#contact .contact-content h2','#contact .contact-content p','#contact .contact-main-action','#contact .contact-channel'
+    ].join(',');
+    const elements=Array.from(document.querySelectorAll(selector));
+    const observer=new IntersectionObserver((entries,obs)=>{
+      entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-revealed');obs.unobserve(entry.target);}});
+    }, {threshold:.10,rootMargin:'0px 0px -25px 0px'});
+    elements.forEach((el,i)=>{
+      // Consecutive elements in a list enter with a subtle stagger, not long delays.
+      const siblings=el.parentElement?Array.from(el.parentElement.children):[];
+      const position=siblings.indexOf(el);
+      const stagger=(position>=0 && position<5)?(position%3)*75:0;
+      el.style.setProperty('--reveal-delay',stagger+'ms');
+      el.classList.add('scroll-reveal');
+      if(el.getBoundingClientRect().top < innerHeight*.88) el.classList.add('is-revealed');
+      else observer.observe(el);
+    });
+  })();
+  </script>
+
+</body></html>
